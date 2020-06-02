@@ -1,15 +1,15 @@
 //課題8
-function calcArea(number) {
+function calcCircleArea(number) {
     return number * number *3.14
 }
-alert('課題8： ' + calcArea(3));
+alert('課題8： ' + calcCircleArea(3));
 
 //課題6,7
 var animals = [
-    {'name': 'パンダ', 'weight': 80},
-    {'name': 'ライオン', 'weight': 200},
-    {'name': 'キリン', 'weight': 300}
-    ];
+{'name': 'パンダ', 'weight': 80},
+{'name': 'ライオン', 'weight': 200},
+{'name': 'キリン', 'weight': 300}
+];
 var animal = prompt('[課題6,7]パンダ、ライオン、キリンから一つ選んでください');
 var i = 0;
 while (i < animals.length) {
@@ -55,7 +55,9 @@ while (i < animals.length) {
 
 //課題2
 var number = prompt('[課題2]数字を入力してください');
-if (number > 0) {
+if (number == 0) {
+    alert('正の数でも負の数でもありません')
+} else if (number > 0) {
     alert('正の数です');
 } else if (number < 0) {
     alert('負の数です');
@@ -65,7 +67,9 @@ if (number > 0) {
 
 //課題1
 var number = prompt('[課題1]数字を入力してください');
-if (number > 0) {
+if (number == 0) {
+    alert('正の数でも負の数でもありません')
+} else if (number > 0) {
     alert('正の数です');
 } else {
     alert('負の数です');
